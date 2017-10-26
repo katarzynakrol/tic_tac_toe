@@ -1,0 +1,134 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Ribeye Marrow', cursive;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game,
+.info {
+    margin: 0 30px;
+}
+
+table {
+    margin: 20px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+td {
+    border-bottom: 2px solid #000;
+    padding: 50px;
+    border-right: 2px solid #000;
+}
+
+td:last-child {
+    border-right: 2px solid #fff;
+}
+
+.third td {
+    border-bottom: none;
+}
+
+.info img {
+    width: 50px;
+    cursor: pointer;
+}
+
+#step1,
+#step2 {
+    padding: 0 5px;
+}
+
+.gamer1,
+.gamer2 {
+    padding: 10px;
+    column-count: 2;
+}
+
+.gamer2,
+#startGameBtn {
+    margin-bottom: 20px;
+}
+
+#startGameBtn {
+    font-family: 'Raleway', sans-serif;
+    background-color: #c3e8cb;
+    width: 160px;
+    height: 35px;
+}
+
+.circleAndCross {
+    margin: 10px 0;
+}
+
+td .marks {
+    cursor: pointer;
+    width: 60px;
+    opacity: 0.3;
+}
+
+.marks:hover {
+    opacity: 1;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.stopGame {
+    opacity: 0;
+    width: 60px;
+    cursor: default;
+}
+
+.stopGame:hover {
+    opacity: 0;
+}
+
+.reload {
+    display: none;
+    background-image: url('../images/bg.jpg');
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px 10px 30px 10px;
+    border: 2px solid rgb(216, 137, 137);
+}
+
+.reload button {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.thanks {
+    display: none;
+    background-image: url('../images/bgGreen.jpg');
+    border: 2px solid #c3e8cb;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+#loss {
+    display: none;
+}

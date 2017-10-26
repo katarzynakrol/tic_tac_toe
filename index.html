@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kółko i krzyżyk</title>
+    <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <h1>KÓŁKO I KRZYŻYK</h1>
+    <div class="container">
+        <div class="game">
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="third">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <div id="step1">
+                <h2>Krok 1</h2>
+                <p>Wpisz swoje imię i wybierz czym chcesz zagrać</p>
+                <div class="gamer1">
+
+                    <label>Gracz nr 1</label>
+                    <br>
+                    <input type="text">
+
+                    <div class="circleAndCross">
+                        <img src="images/cirkle.png" alt="" id="circle1">
+                        <img src="images/cross.png" alt="" id="cross1">
+                    </div>
+                </div>
+                <div class="gamer2">
+
+                    <label>Gracz nr 2</label>
+                    <br>
+                    <input type="text">
+
+                    <div class="circleAndCross">
+                        <img src="images/cirkle.png" alt="" id="circle2">
+                        <img src="images/cross.png" alt="" id="cross2">
+                    </div>
+                </div>
+            </div>
+            <div id="step2">
+                <h2>Krok 2</h2>
+                <p>Kliknij i zobacz, kto zaczyna</p>
+                <button id="startGameBtn">Rozpocznij grę!</button>
+                <br>
+                <output id="whoStarts"></output>
+            </div>
+        </div>
+    </div>
+    <div id="loss">
+        <img src="images/sad.png">
+    </div>
+    <div class="reload" id="startAgain">
+        <h2>Czy chcesz zagrać ponownie?</h2>
+        <button id="yes">Tak</button>
+        <button id="no">Nie</button>
+    </div>
+    <div class="thanks" id="endOfTheGame">
+        <h2>Dziękujemy za wspólną grę!</h2>
+    </div>
+</body>
+
+</html>
